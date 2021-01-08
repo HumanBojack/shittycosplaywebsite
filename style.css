@@ -1,0 +1,118 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{padding:0;margin:0;}
+
+body section:nth-child(0n+5){background-color: red;display: flex;}
+body section:nth-child(0n+5) h1{width:100vm;}
+body section:nth-child(0n+5) a{}
+
+
+
+footer{
+  background-color: rgb(39, 39, 39);display: flex;
+  justify-content: center;}
+footer span{
+  width: 1140px;
+  color: rgb(84, 84, 84);
+  padding: 2em 0;
+}
+footer a{color: rgb(84, 84, 84);}
+footer a:hover{text-decoration:none;}
+
