@@ -1,47 +1,48 @@
-
-
-
-
-
-
-
-
-body
-{
+body{
+	padding:0;
+	margin:0;
 	display:flex;
 	flex-direction:column;
 	justify-content: center;
 	align-items:center;
-	background-color:#c0392b;
-	color:white;
+	background-color:#C0392B;
+	color:#faecea;
 }
 
 
 header
 {
-	display:flex;
-	justify-content:space-between;
 	width:90%;
 	margin:0;
+	padding-top:10px;
+	display:flex;
+	align-items:center;
 }
-header img
+header>img
 {
-
 	width:10em;
 	height:auto;
-	filter: drop-shadow(0px 0px 20px white); 
 }
-nav
+nav{
+	display:flex;
+	width:100%;
+}
+ul
 {
-	width:80%;
+	width:100%;
 	display:flex;
 	justify-content:space-around;
 	align-items:center;
 	flex-wrap:wrap;
+	padding:0;
+	margin:0;
+}
+li{
+	margin:0;
 }
 header a
 {
-	color:white;
+	color:#faecea;
 	font-size:1.5em;
 	font-family: 'Ubuntu', sans-serif;
 	text-decoration:none;
@@ -50,39 +51,33 @@ header a
 header a:hover
 {
 	text-shadow: 0 0 1px black;
+	color:white;
 }
 
 
-@media (max-width: 1000px){
-header
-{
-	justify-content:space-around;
-}
-header a
-{
-	padding:2px;
-	background-color:black;
-	border-radius:3px;
-	margin:1px;
-}
-nav
-{
-	flex-direction:column;
-	margin:0;
-	width:250px;
-}
-header img
-{
-	height:40%;
-	align-self:center;
-}}
+header ul{list-style:none;}
 
+.cbtn{display:none;}
+#cb{display:none;}
+i>img{width:35px;}
+
+@media (max-width: 1000px){.cbtn{display:block;}ul{position: absolute; top:-101%; border-bottom: 2px black solid; height:25%; border-top: 2px black solid; height:25%; width: 100%; background: #c0392b; left:0;
+ display:flex; flex-direction: column; justify-content:space-around;} nav{align-items:flex-end; justify-content:center; flex-direction: column;}} 
+
+
+#cb:checked ~ ul{
+	top:80px;
+}
+
+
+@media (max-width:1065px){.hero img{border-bottom:5px black solid;}}
+@media (max-width: 660px){.herotxt{width:95%;} p{display:block;font-size:100%; width:100%;}}
 
 
 
 .hero
 {
-	width:80%;
+	width:100%;
 	align-self:center;
 	display:flex;
 	flex-direction:column;
@@ -96,7 +91,8 @@ header img
 {
 text-align: center;
 font-size:4em;
-
+font-family: 'Source Sans Pro', sans-serif;
+background-color:black;
 }
 .herocontent
 {
@@ -112,6 +108,7 @@ font-size:4em;
 	align-content:center;
 	flex-direction:column;
 	font-family: 'Ubuntu', sans-serif;
+	text-align:center;
 }
 .hero a
 {
@@ -119,7 +116,7 @@ font-size:4em;
  color:#c0392b;
  align-self:center;
  text-decoration:none;
- background-color:white;
+ background-color:#faecea;
  padding:8px;
  margin:0;
  border-radius:5px;
@@ -174,79 +171,7 @@ font-size:4em;
 	text-align:center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+h3{font-size:1.5em; margin:5px;}
 
 
 
@@ -257,18 +182,18 @@ font-size:4em;
 body{padding:0;margin:0;}
 body section:nth-child(0n+4){background: darkgrey;color:#000;padding-bottom: 20px;width: 100%;}
 body section:nth-child(0n+4) div:nth-child(1){max-width: 1140px;margin: auto;padding: 0 2em;}
-body section:nth-child(0n+4) h1{text-align: center;width: 100%;}
+body section:nth-child(0n+4) h3{text-align: center;width: 100%;}
 body section:nth-child(0n+4) h2{text-align: center;width: 100%;}
 body section:nth-child(0n+4) div:nth-child(2){display: flex;}
-body section:nth-child(0n+4) div:nth-child(2) div{display:block;padding: 20px;background: #fff;}
+body section:nth-child(0n+4) div:nth-child(2) div{display:block;padding: 20px;background: #faecea;}
 body section:nth-child(0n+4) div:nth-child(2) div:nth-child(2){margin: 0 20px;}
-body section:nth-child(0n+4) a{color: rgb(255,28,0);display: block;text-align: center;border: 1px solid red;text-decoration: none;padding: 8px 18px;font-size: 1.75em;}
-body section:nth-child(0n+4) a:hover{color:#fff;background:red;}
+body section:nth-child(0n+4) a{color: rgb(255,28,0);display: block;text-align: center;border: 1px solid #C0392B;text-decoration: none;padding: 8px 18px;font-size: 1.75em;}
+body section:nth-child(0n+4) a:hover{color:#fff;background:#C0392B;}
 
-body section:nth-child(0n+5){background-color: red;
+body section:nth-child(0n+5){background-color: #C0392B;
   width: 100%;
   padding-top: 1em;}
-body section:nth-child(0n+5) h1{text-align: center;}
+body section:nth-child(0n+5) h3{text-align: center;}
 body section:nth-child(0n+5) div{display: flex;margin: 2em;justify-content: center;}
 body section:nth-child(0n+5) a{color:#fff;display: block;text-align: center;border: 1px solid #fff;text-decoration: none;padding: 8px 18px;font-size: 1.75em;width: 40%;
   margin: 0 10px;}
