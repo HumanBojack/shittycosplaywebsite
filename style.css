@@ -173,10 +173,21 @@ text-align: center;
 
 
 body{padding:0;margin:0;}
+body section:nth-child(0n+4){background: darkgrey;color:#000;padding-bottom: 20px;}
+body section:nth-child(0n+4) div:nth-child(1){width: 1140px;margin: auto;}
+body section:nth-child(0n+4) h1{text-align: center;width: 100%;}
+body section:nth-child(0n+4) h2{text-align: center;width: 100%;}
+body section:nth-child(0n+4) div:nth-child(2){display: flex;}
+body section:nth-child(0n+4) div:nth-child(2) div{display:block;padding: 20px;background: #fff;}
+body section:nth-child(0n+4) div:nth-child(2) div:nth-child(2){margin: 0 20px;}
+body section:nth-child(0n+4) a{color: rgb(255,28,0);display: block;text-align: center;border: 1px solid red;text-decoration: none;padding: 8px 18px;font-size: 1.75em;}
+body section:nth-child(0n+4) a:hover{color:#fff;background:red;}
 
-body section:nth-child(0n+5){background-color: red;display: flex;}
-body section:nth-child(0n+5) h1{width:100vm;}
-body section:nth-child(0n+5) a{}
+body section:nth-child(0n+5){background-color: red;padding-bottom: 20px;}
+body section:nth-child(0n+5) h1{text-align: center;}
+body section:nth-child(0n+5) div{display: flex;justify-content: center;}
+body section:nth-child(0n+5) a{color:#fff;display: block;text-align: center;border: 1px solid #fff;text-decoration: none;padding: 8px 18px;font-size: 1.75em;width: 50%;
+  margin: 0 10px;}
 
 
 
@@ -191,3 +202,6 @@ footer span{
 footer a{color: rgb(84, 84, 84);}
 footer a:hover{text-decoration:none;}
 
+@media screen (max-width: 640px) {
+  body section:nth-child(0n+5){background: green;}
+}
