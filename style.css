@@ -45,7 +45,7 @@ header a
 	font-size:1.5em;
 	font-family: 'Ubuntu', sans-serif;
 	text-decoration:none;
-
+	padding:5px;
 }
 header a:hover
 {
@@ -53,11 +53,17 @@ header a:hover
 }
 
 
-@media (max-width: 850px){
-
+@media (max-width: 1000px){
 header
 {
 	justify-content:space-around;
+}
+header a
+{
+	padding:2px;
+	background-color:black;
+	border-radius:3px;
+	margin:1px;
 }
 nav
 {
@@ -69,10 +75,8 @@ header img
 {
 	height:40%;
 	align-self:center;
-}
+}}
 
-
-}
 
 
 
