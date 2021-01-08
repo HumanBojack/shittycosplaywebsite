@@ -6,6 +6,81 @@
 
 
 
+body
+{
+	display:flex;
+	flex-direction:column;
+	background-color:#c0392b;
+	color:white;
+}
+
+
+header
+{
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+	margin:0;
+}
+header img
+{
+
+	width:10em;
+	height:auto;
+	filter: drop-shadow(0px 0px 20px white); 
+}
+nav
+{
+	width:80%;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+header a
+{
+	color:white;
+	font-size:1.5em;
+	font-family: 'Ubuntu', sans-serif;
+	text-decoration:none;
+
+}
+header a:hover
+{
+	text-shadow: 0 0 1px black;
+}
+
+
+
+.hero
+{
+	width:80%;
+	align-self:center;
+	display:flex;
+	flex-direction:column;
+}
+.hero img
+{
+	width:400px;
+	height:auto;
+}
+.hero h1
+{
+text-align: center;
+
+}
+.herocontent
+{
+	display:flex;
+	justify-content:center;
+}
+.herotxt
+{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	font-family: 'Ubuntu', sans-serif;
+}
 
 
 
