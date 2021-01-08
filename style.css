@@ -153,11 +153,12 @@ font-size:4em;
 }
 .vusur2
 {
-	width:1000px;
-	background-color:black;
-	display:flex;
-	flex-wrap:wrap;
-	justify-content:space-around;
+  width: 1140px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2em;
 }
 .vusur2 span
 {
@@ -250,8 +251,8 @@ font-size:4em;
 
 
 body{padding:0;margin:0;}
-body section:nth-child(0n+4){background: darkgrey;color:#000;padding-bottom: 20px;}
-body section:nth-child(0n+4) div:nth-child(1){width: 1140px;margin: auto;}
+body section:nth-child(0n+4){background: darkgrey;color:#000;padding-bottom: 20px;width: 100%;}
+body section:nth-child(0n+4) div:nth-child(1){max-width: 1140px;margin: auto;padding: 0 2em;}
 body section:nth-child(0n+4) h1{text-align: center;width: 100%;}
 body section:nth-child(0n+4) h2{text-align: center;width: 100%;}
 body section:nth-child(0n+4) div:nth-child(2){display: flex;}
@@ -260,27 +261,30 @@ body section:nth-child(0n+4) div:nth-child(2) div:nth-child(2){margin: 0 20px;}
 body section:nth-child(0n+4) a{color: rgb(255,28,0);display: block;text-align: center;border: 1px solid red;text-decoration: none;padding: 8px 18px;font-size: 1.75em;}
 body section:nth-child(0n+4) a:hover{color:#fff;background:red;}
 
-body section:nth-child(0n+5){background-color: red;padding-bottom: 20px;}
+body section:nth-child(0n+5){background-color: red;
+  width: 100%;
+  padding-top: 1em;}
 body section:nth-child(0n+5) h1{text-align: center;}
-body section:nth-child(0n+5) div{display: flex;justify-content: center;}
-body section:nth-child(0n+5) a{color:#fff;display: block;text-align: center;border: 1px solid #fff;text-decoration: none;padding: 8px 18px;font-size: 1.75em;width: 50%;
+body section:nth-child(0n+5) div{display: flex;margin: 2em;justify-content: center;}
+body section:nth-child(0n+5) a{color:#fff;display: block;text-align: center;border: 1px solid #fff;text-decoration: none;padding: 8px 18px;font-size: 1.75em;width: 40%;
   margin: 0 10px;}
 
 
 
 footer{
-  background-color: rgb(39, 39, 39);display: flex;
-  justify-content: center;}
+  background-color: rgb(39, 39, 39);
+  display: flex;
+  width: 100%;}
 footer span{
-  width: 1140px;
   color: rgb(84, 84, 84);
-  padding: 2em 0;
+  padding: 2em;
 }
 footer a{color: rgb(84, 84, 84);}
 footer a:hover{text-decoration:none;}
 
-@media (max-width: 840px){
-body section:nth-child(0n+4) div:nth-child(2){display: flex;}
+@media (max-width: 640px){
+  body section:nth-child(0n+4) div:nth-child(2){flex-direction: column;}
+  body section:nth-child(0n+4) div:nth-child(2) div:nth-child(2){margin:2em 0;}
 }
 
 
