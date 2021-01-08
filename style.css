@@ -279,6 +279,11 @@ footer span{
 footer a{color: rgb(84, 84, 84);}
 footer a:hover{text-decoration:none;}
 
-@media screen (max-width: 640px) {
-  body section:nth-child(0n+5){background: green;}
+@media (max-width: 840px){
+body section:nth-child(0n+4) div:nth-child(2){display: flex;}
 }
+
+
+
+
+
