@@ -1,219 +1,89 @@
-body{
-	padding:0;
-	margin:0;
-	display:flex;
-	flex-direction:column;
-	justify-content: center;
-	align-items:center;
-	background-color:#C0392B;
-	color:#faecea;
-}
+body{padding:0;margin:0;display:flex;flex-direction:column;justify-content: center;align-items:center;background-color:#C0392B;color:#faecea;}
 
+/* Header */
+header{width:90%;margin:0;padding-top:10px;display:flex;align-items:center;}
+header>img{width:10em;height:auto;}nav{display:flex;width:100%;}
 
-header
-{
-	width:90%;
-	margin:0;
-	padding-top:10px;
-	display:flex;
-	align-items:center;
-}
-header>img
-{
-	width:10em;
-	height:auto;
-}
-nav{
-	display:flex;
-	width:100%;
-}
-ul
-{
-	width:100%;
-	display:flex;
-	justify-content:space-around;
-	align-items:center;
-	flex-wrap:wrap;
-	padding:0;
-	margin:0;
-}
-li{
-	margin:0;
-}
-header a
-{
-	color:#faecea;
-	font-size:1.5em;
-	font-family: 'Ubuntu', sans-serif;
-	text-decoration:none;
-	padding:5px;
-}
-header a:hover
-{
-	text-shadow: 0 0 1px black;
-	color:white;
-}
+ul{width:100%;display:flex;justify-content:space-around;align-items:center;flex-wrap:wrap;padding:0;margin:0;list-style-type: none;}
+li{margin:0;}
 
+header a{color:#faecea;font-size:1.5em;font-family: 'Ubuntu', sans-serif;text-decoration:none;padding:5px;}
+header a:hover:not(.inscription){text-shadow: 0 0 1px black;color:white;}
+.inscription{color:#c0392b;text-decoration:none;background-color:#faecea;border-radius:5px;box-shadow:3px 2px 1px #bcbdbd;padding:8px;}
+.inscription:hover{box-shadow:0 0 0 black;}
 
-header ul{list-style:none;}
-
+/* Navbar pour mobiles + reactive */
 .cbtn{display:none;}
 #cb{display:none;}
+#cb:checked ~ ul{top:80px;}
 i>img{width:35px;}
 
-@media (max-width: 1000px){.cbtn{display:block;}ul{position: absolute; top:-101%; border-bottom: 2px black solid; height:25%; border-top: 2px black solid; height:25%; width: 100%; background: #c0392b; left:0;
+@media (max-width: 1000px){
+	.cbtn{display:block;}
+	ul{position: absolute; top:-101%; border-bottom: 2px black solid; height:25%; border-top: 2px black solid; height:25%; width: 100%; background: #c0392b; left:0;
  display:flex; flex-direction: column; justify-content:space-around;} nav{align-items:flex-end; justify-content:center; flex-direction: column;}} 
 
-
-#cb:checked ~ ul{
-	top:80px;
-}
-
-
 @media (max-width:1065px){.hero img{border-bottom:5px black solid;}}
-@media (max-width: 660px){.herotxt{width:95%;} p{display:block;font-size:100%; width:100%;}}
+@media (max-width: 660px){.herotxt{width:95%;}}
+
+
+/* Hero */
+.hero{width:100%;align-self:center;display:flex;flex-direction:column;}
+.herocontent{display:flex;justify-content:center;flex-wrap:wrap;}
+.herotxt{margin:15px;display:flex;justify-content:center;align-content:center;flex-direction:column;font-family: 'Ubuntu', sans-serif;text-align:center;}
+
+.hero h1{text-align: center;font-size:4em;font-family: 'Source Sans Pro', sans-serif;background-color:black;box-shadow:0px 3px 3px #bcbdbd;}
+
+.hero img{width:400px;height:auto;}
+.hero p{font-size:1.8em;}
+.hero strong{align-self:center;font-size:2em;}
+
+.hero a{font-size:1.3em;color:#c0392b;align-self:center;text-decoration:none;background-color:#faecea;padding:8px;margin:0;border-radius:5px;box-shadow:4px 3px 2px #bcbdbd;width:60%;text-align:center;}
+.hero a:hover{box-shadow:0 0 0 black;}
+
+
+/* Section "Vu Sur" */
+.bloc{width:100%;background-color:black;display:flex;justify-content:center;}
+.int{width: 1140px;background-color: black;display: flex;flex-wrap: wrap;justify-content: space-around;padding: 2em;}
+
+.int span{display:block;width:200px;height:100px;font-size:1.5em;padding:5px;text-align:center;}
+.logovu{width:150px;height:auto;margin:5px 25px;}
+
+
+/* Section "Comment voulez vous cosplayer ?" */
+#choix-cosplay{background: #bcbdbd;color:#000;padding-bottom: 20px;width: 100%;}
+
+#choix-cosplay>div{max-width: 1140px;margin: auto;padding: 0 2em;}
+#choix-cosplay>div>div{display: flex;}
+#choix-cosplay>div>div>div{display:flex;padding: 20px;background: #faecea;border-radius:10px;margin:0;flex-direction:column;justify-content:space-between;}
+#choix-cosplay>div>div>div:nth-child(2){margin: 0 20px;}
+
+#choix-cosplay h3{text-align: center;width: 100%;}
+#choix-cosplay h2{text-align: center;width: 100%;}
+
+#choix-cosplay a{color: rgb(255,28,0);display: block;text-align: center;border: 1px solid #C0392B;text-decoration: none;padding: 8px 18px;font-size: 1.75em;}
+#choix-cosplay a:hover{color:#fff;background:#C0392B;}
 
 
 
-.hero
-{
-	width:100%;
-	align-self:center;
-	display:flex;
-	flex-direction:column;
-}
-.hero img
-{
-	width:400px;
-	height:auto;
-}
-.hero h1
-{
-text-align: center;
-font-size:4em;
-font-family: 'Source Sans Pro', sans-serif;
-background-color:black;
-}
-.herocontent
-{
-	display:flex;
-	justify-content:center;
-	flex-wrap:wrap;
-}
-.herotxt
-{
-	margin:15px;
-	display:flex;
-	justify-content:center;
-	align-content:center;
-	flex-direction:column;
-	font-family: 'Ubuntu', sans-serif;
-	text-align:center;
-}
-.hero a
-{
- font-size:1.3em;
- color:#c0392b;
- align-self:center;
- text-decoration:none;
- background-color:#faecea;
- padding:8px;
- margin:0;
- border-radius:5px;
- box-shadow:4px 3px 2px grey;
- width:60%;
- text-align:center;
-}
-.hero a:hover
-{
-	box-shadow:0 0 0 black;
-}
-.hero strong
-{
-	align-self:center;
-	font-size:2em;
-}
-.hero p
-{
-	font-size:1.8em;
-}
+/* "Découvrez comment j'ai fais !" */
+#ressources{background-color: #C0392B;width: 100%;padding-top: 1em;}
+#ressources div{display: flex;margin: 2em;justify-content: center;}
 
-
-.logovu
-{
-	width:150px;
-	height:auto;
-	margin:5px 25px;
-}
-.vusur
-{
-	width:100%;
-	background-color:black;
-	display:flex;
-	justify-content:center;
-}
-.vusur2
-{
-  width: 1140px;
-  background-color: black;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 2em;
-}
-.vusur2 span
-{
-	display:block;
-	width:200px;
-	height:100px;
-	font-size:1.5em;
-	padding:5px;
-	text-align:center;
-}
-
-h3{font-size:1.5em; margin:5px;}
+#ressources h3{text-align: center;font-size:1.5em; margin:5px;}
+#ressources a{color:#fff;display: block;text-align: center;border: 1px solid #fff;text-decoration: none;padding: 8px 18px;font-size: 1.75em;width: 40%;margin: 0 10px;}
 
 
 
+footer{background-color: rgb(39, 39, 39);display: flex;width: 100%;}
+footer span{color: rgb(84, 84, 84);padding: 2em;}
 
-
-
-
-body{padding:0;margin:0;}
-body section:nth-child(0n+4){background: darkgrey;color:#000;padding-bottom: 20px;width: 100%;}
-body section:nth-child(0n+4) div:nth-child(1){max-width: 1140px;margin: auto;padding: 0 2em;}
-body section:nth-child(0n+4) h3{text-align: center;width: 100%;}
-body section:nth-child(0n+4) h2{text-align: center;width: 100%;}
-body section:nth-child(0n+4) div:nth-child(2){display: flex;}
-body section:nth-child(0n+4) div:nth-child(2) div{display:block;padding: 20px;background: #faecea;}
-body section:nth-child(0n+4) div:nth-child(2) div:nth-child(2){margin: 0 20px;}
-body section:nth-child(0n+4) a{color: rgb(255,28,0);display: block;text-align: center;border: 1px solid #C0392B;text-decoration: none;padding: 8px 18px;font-size: 1.75em;}
-body section:nth-child(0n+4) a:hover{color:#fff;background:#C0392B;}
-
-body section:nth-child(0n+5){background-color: #C0392B;
-  width: 100%;
-  padding-top: 1em;}
-body section:nth-child(0n+5) h3{text-align: center;}
-body section:nth-child(0n+5) div{display: flex;margin: 2em;justify-content: center;}
-body section:nth-child(0n+5) a{color:#fff;display: block;text-align: center;border: 1px solid #fff;text-decoration: none;padding: 8px 18px;font-size: 1.75em;width: 40%;
-  margin: 0 10px;}
-
-
-
-footer{
-  background-color: rgb(39, 39, 39);
-  display: flex;
-  width: 100%;}
-footer span{
-  color: rgb(84, 84, 84);
-  padding: 2em;
-}
-footer a{color: rgb(84, 84, 84);}
+footer a{color: rgb(84, 84, 84); margin:15px 10px;}
 footer a:hover{text-decoration:none;}
 
 @media (max-width: 640px){
-  body section:nth-child(0n+4) div:nth-child(2){flex-direction: column;}
-  body section:nth-child(0n+4) div:nth-child(2) div:nth-child(2){margin:2em 0;}
+	#choix-cosplay>div>div{flex-direction: column;}
+	#choix-cosplay > div > div > div:nth-child(2){margin:10px 0px;}
 }
 
 
