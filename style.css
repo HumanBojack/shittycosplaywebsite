@@ -1,4 +1,4 @@
-body{padding:0;margin:0;display:flex;flex-direction:column;justify-content: center;align-items:center;background-color:#C0392B;color:#faecea;}
+body{padding:0;margin:0;display:flex;flex-direction:column;justify-content: center;align-items:center;background-color:#C0392B;color:#faecea;font-family: 'Ubuntu', sans-serif;}
 
 /* Header */
 header{width:90%;margin:0;padding-top:10px;display:flex;align-items:center;}
@@ -7,7 +7,7 @@ header>img{width:10em;height:auto;}nav{display:flex;width:100%;}
 ul{width:100%;display:flex;justify-content:space-around;align-items:center;flex-wrap:wrap;padding:0;margin:0;list-style-type: none;}
 li{margin:0;}
 
-header a{color:#faecea;font-size:1.5em;font-family: 'Ubuntu', sans-serif;text-decoration:none;padding:5px;}
+header a{color:#faecea;font-size:1.5em;text-decoration:none;padding:5px;}
 header a:hover:not(.inscription){text-shadow: 0 0 1px black;color:white;}
 .inscription{color:#c0392b;text-decoration:none;background-color:#faecea;border-radius:5px;box-shadow:3px 2px 1px #bcbdbd;padding:8px;}
 .inscription:hover{box-shadow:0 0 0 black;}
@@ -30,9 +30,9 @@ i>img{width:35px;}
 /* Hero */
 .hero{width:100%;align-self:center;display:flex;flex-direction:column;}
 .herocontent{display:flex;justify-content:center;flex-wrap:wrap;}
-.herotxt{margin:15px;display:flex;justify-content:center;align-content:center;flex-direction:column;font-family: 'Ubuntu', sans-serif;text-align:center;}
+.herotxt{margin:15px;display:flex;justify-content:center;align-content:center;flex-direction:column;text-align:center;}
 
-.hero h1{text-align: center;font-size:4em;font-family: 'Source Sans Pro', sans-serif;background-color:black;box-shadow:0px 3px 3px #bcbdbd;}
+.hero h1{text-align: center;font-size:4em;background-color:black;box-shadow:0px 3px 3px #bcbdbd;}
 
 .hero img{width:400px;height:auto;}
 .hero p{font-size:1.8em;}
